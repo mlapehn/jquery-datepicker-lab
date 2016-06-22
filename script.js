@@ -1,4 +1,4 @@
-var today = new Date();
+ var today = new Date();
 var diffDays = 0;
 var m_names = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec");
 var curr_date = today.getDate();
@@ -11,6 +11,11 @@ $("#datepicker").datepicker();
 function daysLeft() {
 	var a = $( "#datepicker" ).datepicker('getDate').getTime();
 	// solutions for 9, 10, 11 and 12 go here:
+	var b = today.getTime();
+	var c = 24*60*60*1000;
+	var diffDays = Math.round((a-b)/c);
+
+
 
 	// var b = _____
 	// var c = _____
