@@ -26,6 +26,8 @@ $("#datepicker").on("change", function(){
 
 // 16. STRETCH Challenges:
 
+	var = endDate = localStorage.setItem("endDate", $("#endDate").val());
+
 // For the highly ambitious, you may write a couple if statements and customize the result HTML string accordingly.
 // Here are the possibilities I've thought of; there may be more.
 // condition 1:  there is an input but someone has selected a date in the past
